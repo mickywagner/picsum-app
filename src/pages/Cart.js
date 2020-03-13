@@ -2,9 +2,9 @@ import React from "react"
 
 function Cart() {
     return(
-        <div>
-            This is the cart
-        </div>
+        <main className="cart-page">
+            <h1>Check out</h1>
+        </main>
     )
 }
 
