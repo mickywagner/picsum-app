@@ -14,7 +14,6 @@ function AppContextProvider({children}) {
             .catch(err => console.log(err))
     }, [])
 
-    console.log(allPhotos)
 
     return(
         <AppContext.Provider value={{allPhotos}}>
