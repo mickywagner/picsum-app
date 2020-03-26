@@ -1,5 +1,6 @@
 import React, {useState, useContext} from "react"
 import {AppContext} from "../Context"
+import PropTypes from 'prop-types'
 
 
 function Image({className, img}) {
@@ -14,10 +15,6 @@ function Image({className, img}) {
         }
     }
         
-
-
-
-    
     const addIcon = isHovered &&  <i className="ri-add-circle-line cart"></i>
 
     return (
@@ -31,6 +28,15 @@ function Image({className, img}) {
             {addIcon}
         </div>
     )
+}
+
+Image.propTypes = {
+    className: PropTypes.string,
+    img: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired,
+        isFavorite: PropTypes.bool
+    }) 
 }
 
 export default Image
