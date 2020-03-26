@@ -6,6 +6,7 @@
     --blue: #ACE6EC;
 }
 
+
 html, body {
     font-family: sans-serif;
     margin: 0;
@@ -103,7 +104,7 @@ img.image-grid {
     grid-column: span 2;
 }
 
-.tall {
+.big {
     grid-column: span 2;
     grid-row: span 2;
 }
