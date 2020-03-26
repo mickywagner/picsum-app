@@ -14,9 +14,19 @@ function AppContextProvider({children}) {
             .catch(err => console.log(err))
     }, [])
 
+    function toggleFavorite(id) {
+        const newArray = allPhotos.map(photo => {
+            if(photo.id === id) {
+                return {...photo, isFavorite: !photo.isFavorite}
+            }
+            return photo
+        })
+        setAllPhotos(newArray)
+    }
+
 
     return(
-        <AppContext.Provider value={{allPhotos}}>
+        <AppContext.Provider value={{allPhotos, toggleFavorite}}>
             {children}
         </AppContext.Provider>
     )
