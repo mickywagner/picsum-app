@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 
 function Image({className, img}) {
     const [isHovered, setIsHovered] = useState(false)
-    const {toggleFavorite, addCartItem} = useContext(AppContext)
+    const {toggleFavorite, addCartItem, cartItems} = useContext(AppContext)
 
     function heartIcon() {
         if(img.isFavorite) {
@@ -14,9 +14,15 @@ function Image({className, img}) {
             return <i className="ri-heart-line favorite" onClick={() => toggleFavorite(img.id)}></i>
         }
     }
-        
-    const addIcon = isHovered &&  
-        <i className="ri-add-circle-line cart" onClick={() => addCartItem(img)}></i>
+
+    function addIcon(imgID) {
+        const alreadyInCart = cartItems.some(item => item.id === img.id)
+        if(alreadyInCart) {
+            return <i className="ri-shopping-cart-fill cart"></i>
+        } else if(isHovered) {
+            return <i className="ri-add-circle-line cart" onClick={() => addCartItem(img)}></i>
+        }                
+    }
 
     return (
         <div 
@@ -26,7 +32,7 @@ function Image({className, img}) {
         >
             <img src={img.url} className="image-grid"/>
             {heartIcon()}
-            {addIcon}
+            {addIcon()}
         </div>
     )
 }

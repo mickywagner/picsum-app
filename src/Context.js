@@ -29,11 +29,8 @@ function AppContextProvider({children}) {
         setCartItems(prevItems => [...prevItems, newItem])
     }
 
-    console.log(cartItems)
-
-
     return(
-        <AppContext.Provider value={{allPhotos, toggleFavorite, addCartItem}}>
+        <AppContext.Provider value={{allPhotos, toggleFavorite, addCartItem, cartItems}}>
             {children}
         </AppContext.Provider>
     )
