@@ -13,6 +13,10 @@ function Cart() {
         <main className="cart-page">
             <h1>Check out</h1>
             {cartElements}
+            <p className="total-cost">Total: </p>
+            <div className="order-button">
+                <button>Submit Order</button>
+            </div>
         </main>
     )
 }

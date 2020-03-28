@@ -1,9 +1,11 @@
 import React from "react"
 
-function CartItem(props) {
+function CartItem({item}) {
     return(
-        <div>
-            <h2>{props.item.id}</h2>
+        <div className="cart-item">
+            <i className="ri-delete-bin-line"></i>
+            <img src={item.url} width="130px" />
+            <p>5.99</p>
         </div>
     )
 }
