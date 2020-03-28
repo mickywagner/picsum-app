@@ -29,8 +29,14 @@ function AppContextProvider({children}) {
         setCartItems(prevItems => [...prevItems, newItem])
     }
 
+    function removeFromCart(id) {
+        setCartItems(prevItems => prevItems.filter(item => item.id !== id))
+    }
+
+    console.log(cartItems)
+
     return(
-        <AppContext.Provider value={{allPhotos, toggleFavorite, addCartItem, cartItems}}>
+        <AppContext.Provider value={{allPhotos, toggleFavorite, addCartItem, cartItems, removeFromCart}}>
             {children}
         </AppContext.Provider>
     )
