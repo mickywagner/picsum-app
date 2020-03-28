@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/picsum-app/static/css/main.7bf25323.chunk.css",
+    "main.js": "/picsum-app/static/js/main.49a35fd6.chunk.js",
+    "main.js.map": "/picsum-app/static/js/main.49a35fd6.chunk.js.map",
+    "runtime-main.js": "/picsum-app/static/js/runtime-main.7d04bc48.js",
+    "runtime-main.js.map": "/picsum-app/static/js/runtime-main.7d04bc48.js.map",
+    "static/css/2.0b1d1a89.chunk.css": "/picsum-app/static/css/2.0b1d1a89.chunk.css",
+    "static/js/2.5c16092f.chunk.js": "/picsum-app/static/js/2.5c16092f.chunk.js",
+    "static/js/2.5c16092f.chunk.js.map": "/picsum-app/static/js/2.5c16092f.chunk.js.map",
+    "index.html": "/picsum-app/index.html",
+    "precache-manifest.b49658fbdb1abd2a913471d1b94d7b50.js": "/picsum-app/precache-manifest.b49658fbdb1abd2a913471d1b94d7b50.js",
+    "service-worker.js": "/picsum-app/service-worker.js",
+    "static/css/2.0b1d1a89.chunk.css.map": "/picsum-app/static/css/2.0b1d1a89.chunk.css.map",
+    "static/css/main.7bf25323.chunk.css.map": "/picsum-app/static/css/main.7bf25323.chunk.css.map",
+    "static/js/2.5c16092f.chunk.js.LICENSE.txt": "/picsum-app/static/js/2.5c16092f.chunk.js.LICENSE.txt",
+    "static/media/remixicon.css": "/picsum-app/static/media/remixicon.e5b755b0.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7d04bc48.js",
+    "static/css/2.0b1d1a89.chunk.css",
+    "static/js/2.5c16092f.chunk.js",
+    "static/css/main.7bf25323.chunk.css",
+    "static/js/main.49a35fd6.chunk.js"
+  ]
+}
