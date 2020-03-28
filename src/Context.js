@@ -33,8 +33,13 @@ function AppContextProvider({children}) {
         setCartItems(prevItems => prevItems.filter(item => item.id !== id))
     }
 
+    function emptyCart() {
+        setCartItems([])
+    }
+
     return(
-        <AppContext.Provider value={{allPhotos, toggleFavorite, addCartItem, cartItems, removeFromCart}}>
+        <AppContext.Provider 
+            value={{allPhotos, toggleFavorite, addCartItem, cartItems, removeFromCart, emptyCart}}>
             {children}
         </AppContext.Provider>
     )
