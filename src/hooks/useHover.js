@@ -1,17 +1,12 @@
 import {useState, useEffect, useRef} from "react"
-import { getElementError } from "@testing-library/react"
 
 function useHover() {
     const [hovered, setHovered] = useState(false)
     const ref = useRef(null)
 
-    function enter() {
-        setHovered(true)
-    }
+    function enter() {setHovered(true)}
 
-    function leave() {
-        setHovered(false)
-    }
+    function leave() {setHovered(false)}
 
     useEffect(() => {
         ref.current.addEventListener('mouseenter', enter)
