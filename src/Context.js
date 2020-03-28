@@ -33,8 +33,6 @@ function AppContextProvider({children}) {
         setCartItems(prevItems => prevItems.filter(item => item.id !== id))
     }
 
-    console.log(cartItems)
-
     return(
         <AppContext.Provider value={{allPhotos, toggleFavorite, addCartItem, cartItems, removeFromCart}}>
             {children}

@@ -1,14 +1,21 @@
-import React from "react"
+import React, {useContext} from "react"
 import {Link} from "react-router-dom"
-import  Icon  from 'react-remixicon';
+import {AppContext} from "../Context"
+
 
 
 function Header() {
+    const {cartItems} = useContext(AppContext)
+    const cartClassName = cartItems.length > 0 ? "ri-shopping-cart-fill" : "ri-shopping-cart-line"
+
+
     return(
         <div>
             <header>
                 <h2><Link to="/">Pic Some</Link></h2>
-                <p><Link to="/cart"> <Icon name="wallet" type="line" size="3x" /></Link></p>
+                <Link to="/cart"> 
+                    <i className={`${cartClassName} ri-fw ri-2x`}></i>
+                </Link>
                 
             </header>
         </div>
