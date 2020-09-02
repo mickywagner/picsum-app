@@ -1,3 +1,26 @@
+<h3>Screenshots</h3>
+<img src="app.gif">
+
+<h3>About This Project</h3>
+<p>Picum is a simple photo e-commerce app. You add and remove photos as favorites or to and from the shopping cart. It's one of the projects from the React Bootcamp on Scrimba. The project covered most of the concepts discussed including React Hooks (useState, useContext, useEffect) and React Router. The course also covered Redux though it's not used in this project.
+</p>
+
+<p>Live version <a href="https://mickywagner.github.io/">here</a>.</p>
+
+
+<h3>Technical Sheet</h3>
+
+<strong>
+<ul>
+  <li>HTML 5</li>
+  <li>CSS 3</li>
+  <li>React, React Hooks</li>
+  <li>React-Router</li>
+</ul>
+</strong>
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
